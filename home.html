@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/991f9f04ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        @media screen and (max-width: 768px) {
+        .in
+        {
+          display: grid !important;
+        }
+        .w
+        {
+          width: 100% !important;
+        }
+        .m{
+          margin: 0% !important;
+          gap: 0 !important;
+     }}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container-fluid row d-flex align-items-center navbar border p-0 w-100 m-0 bg-white"
+        style="height: 60px;">
+        <div class="col-4 d-flex align-items-center d-flex">
+            <img src="university-vector_23-2147501130-removebg-preview.png" height="60px" alt="">
+            <h5 class="m-0 clr text-success">DEMO CO OPERATIVE BANK LTD.</h5>
+        </div>
+        <div class="col-8 align-items-center justify-content-end d-flex">
+            <a href="admin-login.html"
+                class=" logout d-flex ul1 gap-2 float-end align-items-center m-0  justify-content-center p-1 px-2 px-1 rounded bg-primary text-white text-decoration-none">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <li>Logout</li>
+            </a>
+        </div>
+    </div>
+    <div class="nav-manu w-100 d-flex justify-content-center  shadow bg-white ">
+        <ul class="d-flex align-items-center list-unstyled gap-5 m-0 py-1">
+            <a href="viev-Check.html" class="d-flex align-items-center gap-1 text-decoration-none "><i
+                    class="fa-solid fa-file-lines "></i><span>View Cheque</span></a>
+            <a href="view-pending-confo.html" class="d-flex align-items-center gap-1 text-decoration-none"><i
+                    class="fa-solid fa-file-lines"></i><span>View Pending Conform </span></a>
+            <a href="report.html" class="d-flex align-items-center gap-1 text-decoration-none "><i
+                    class="fa-solid fa-file-lines"></i><span>Report</span></a>
+        </ul>
+    </div> -->
+    <nav class="navbar navbar-expand-custom navbar-mainbg px-5 ">
+        <div  class="col-4 d-flex align-items-center d-flex">
+            <img src="university-vector_23-2147501130-removebg-preview.png" height="60px" alt="">
+            <h6 class="m-0 clr text-white " style="font-weight: 500; font-size: 18px;">DEMO BANK</h6>
+        </div>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="viev-Check.html"><i class="fas fa-tachometer-alt"></i>View Cheque</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="view-pending-confo.html"><i class="far fa-address-book"></i>View Pending Conform</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="report.html"><i class="far fa-clone"></i>Report</a>
+                </li>
+                <li class="nav-item">
+                    <a href="admin-login.html">
+               
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+               
+                    </a>
+                </li>
+            
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- form -->
+
+    <div class=" container-fluid  align-items-center justify-content-center  my-5   ">
+        <div  class="row d-flex align-items-center justify-content-center ">
+            <div style="border-radius: 12px !important; background-color: rgb(250, 249, 249);"
+                class="col-sm-9 col-10  border p-4 shadow rounded-2 ">
+                <h6>Inward Cheque</h6>
+                <form>
+                    <div class="form-row  mt-3 m ">
+                        <div class="form-group in1 d-flex in gap-5 m">
+                            <div class="w-50 w ">
+                                <label for="inputEmail4">Account No: <span style="color: RED;">*</span></label>
+                                <input style="font-size: 14px;" class="form-control p-1" id="inputEmail4"
+                                    placeholder="Select Account No">
+                            </div>
+                            <div class="w-50 w   "> <label for="">Cheque Date: <span style="color: RED;">*</span> </label>
+                                <input type="password" style="font-size: 14px;" class="form-control p-1"
+                                    id="inputPassword4" placeholder="Password"> </div>
+                        </div>
+    
+                        <div class="form-group d-flex in gap-5 mt-4 m">
+                            <div class="w-50 w">
+                                <label>Beneficiary Name: <span style="color: RED;">*</span></label>
+                                <input style="font-size: 14px;" type="password" class="form-control p-1"
+                                    id="inputPassword4" placeholder="Enter Beneficiary Name">
+                            </div>
+                            <div class="w-50 w  "> <label for="">Cheque Account: <span style="color: RED;">*</span>
+                                </label> <input type="password" style="font-size: 14px;" class="form-control p-1"
+                                    id="inputPassword4" placeholder="Cheque Account No"> </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3 m">
+                        <label for="inputAddress">Cheque No: <span style="color: RED;">*</span> </label>
+                        <input style="font-size: 14px;" type="text" class="form-control p-1 w-100" id="inputAddress"
+                            placeholder=" Enter Cheque number">
+                    </div>
+                    <div class="form-group mt-3 m">
+                        <label for="inputAddress2">Remark</label>
+                        <input style="font-size: 14px;" type="text" class="form-control p-1 " id="inputAddress2"
+                            placeholder="Enter remark  ">
+                    </div>
+                    <div class="mt-3 d-flex">
+                        <label for="images" class="drop-container" id="dropcontainer">
+                            <input style="font-size: 14px;" class="rounded-1" type="file" id="images" accept="image/*"
+                                required>
+                        </label>
+                    </div>
+                    <div class="form-group d-flex justify-content-between mt-2">
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mt-2 m ">
+                        <div class="d-flex justify-content-evenly">
+                            <button type="submit" class="btn btn-primary border-0 " style="background-color:  #3cabe5;" > Submit</button>
+                            <button style="margin-left: 17px;background-color:  #3cabe5; " class="btn text-white" > <i class="fa-solid fa-rotate-right " style="font-size: 15px;"></i>Reset</button>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-success">Help</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="d-flex align-items-center justify-content-center mt-5" >
+            <p style="letter-spacing: 1px;  font-size: 14px; text-align: center;">copyright @ 2019 <a style="color: green;text-decoration: none; font-size: 14px;" href="#">SOFT-TECH SOLUTIONS</a> All rights reserved </p>
+        </div>
+        </div>
+
+
+    <script>
+        // ---------Responsive-navbar-active-animation-----------
+function test(){
+	var tabsNewAnim = $('#navbarSupportedContent');
+	var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
+	var activeItemNewAnim = tabsNewAnim.find('.active');
+	var activeWidthNewAnimHeight = activeItemNewAnim.innerHeight();
+	var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
+	var itemPosNewAnimTop = activeItemNewAnim.position();
+	var itemPosNewAnimLeft = activeItemNewAnim.position();
+	$(".hori-selector").css({
+		"top":itemPosNewAnimTop.top + "px", 
+		"left":itemPosNewAnimLeft.left + "px",
+		"height": activeWidthNewAnimHeight + "px",
+		"width": activeWidthNewAnimWidth + "px"
+	});
+	$("#navbarSupportedContent").on("click","li",function(e){
+		$('#navbarSupportedContent ul li').removeClass("active");
+		$(this).addClass('active');
+		var activeWidthNewAnimHeight = $(this).innerHeight();
+		var activeWidthNewAnimWidth = $(this).innerWidth();
+		var itemPosNewAnimTop = $(this).position();
+		var itemPosNewAnimLeft = $(this).position();
+		$(".hori-selector").css({
+			"top":itemPosNewAnimTop.top + "px", 
+			"left":itemPosNewAnimLeft.left + "px",
+			"height": activeWidthNewAnimHeight + "px",
+			"width": activeWidthNewAnimWidth + "px"
+		});
+	});
+}
+$(document).ready(function(){
+	setTimeout(function(){ test(); });
+});
+$(window).on('resize', function(){
+	setTimeout(function(){ test(); }, 500);
+});
+$(".navbar-toggler").click(function(){
+	$(".navbar-collapse").slideToggle(300);
+	setTimeout(function(){ test(); });
+});
+
+
+
+// --------------add active class-on another-page move----------
+jQuery(document).ready(function($){
+	// Get current path and find target link
+	var path = window.location.pathname.split("/").pop();
+
+	// Account for home page with empty path
+	if ( path == '' ) {
+		path = 'index.html';
+	}
+
+	var target = $('#navbarSupportedContent ul li a[href="'+path+'"]');
+	// Add active class to target link
+	target.parent().addClass('active');
+});
+
+
+
+
+// Add active class on another page linked
+// ==========================================
+// $(window).on('load',function () {
+//     var current = location.pathname;
+//     console.log(current);
+//     $('#navbarSupportedContent ul li a').each(function(){
+//         var $this = $(this);
+//         // if the current path is like this link, make it active
+//         if($this.attr('href').indexOf(current) !== -1){
+//             $this.parent().addClass('active');
+//             $this.parents('.menu-submenu').addClass('show-dropdown');
+//             $this.parents('.menu-submenu').parent().addClass('active');
+//         }else{
+//             $this.parent().removeClass('active');
+//         }
+//     })
+// });
+    </script>
+</body>
+
+</html>
